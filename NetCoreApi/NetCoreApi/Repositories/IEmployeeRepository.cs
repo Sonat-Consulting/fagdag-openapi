@@ -6,8 +6,8 @@ namespace NetCoreApi.Repositories
 {
     public interface IEmployeeRepository
     {
-        Task<List<Employee>> GetEmployees();
-        Task<Employee> AddEmployee(Employee employee);
-        Task<Employee> GetEmployee(int id);
+        List<Employee> GetEmployees();
+        Employee AddEmployee(Employee employee);
+        Employee GetEmployee(int id);
     }
 }

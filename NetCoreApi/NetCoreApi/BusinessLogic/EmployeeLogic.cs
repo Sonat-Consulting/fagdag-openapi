@@ -15,12 +15,17 @@ namespace NetCoreApi.BusinessLogic
             _employeeRepository = employeeRepository;
         }
 
-        public async Task<List<Employee>> GetEmployees()
+        public Employee GetEmployee(int id)
         {
-            return await _employeeRepository.GetEmployees();
+            return _employeeRepository.GetEmployee(id);
         }
 
-        public async Task<Employee> AddEmployee(CreateEmployeeDto createEmployeeDto)
+        public List<Employee> GetEmployees()
+        {
+            return  _employeeRepository.GetEmployees();
+        }
+
+        public Employee AddEmployee(CreateEmployeeDto createEmployeeDto)
         {
             var employee = new Employee
             {
@@ -28,12 +33,7 @@ namespace NetCoreApi.BusinessLogic
                 Surname = createEmployeeDto.Surname
             };
 
-            return await _employeeRepository.AddEmployee(employee);
-        }
-
-        public async Task<Employee> GetEmployee(int id)
-        {
-            return await _employeeRepository.GetEmployee(id);
+            return _employeeRepository.AddEmployee(employee);
         }
     }
 }

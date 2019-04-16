@@ -7,9 +7,10 @@ namespace NetCoreApi.BusinessLogic
 {
     public interface IEmployeeLogic
     {
-        Task<List<Employee>> GetEmployees();
-
-        Task<Employee> AddEmployee(CreateEmployeeDto createEmployee);
-        Task<Employee> GetEmployee(int id);
+        Employee GetEmployee(int id);
+        
+        List<Employee> GetEmployees();
+        Employee AddEmployee(CreateEmployeeDto createEmployee);
+        
     }
 }

@@ -18,23 +18,23 @@ namespace NetCoreApi.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetEmployees()
+        public IActionResult GetEmployees()
         {
-            var employees = await _employeeLogic.GetEmployees();
+            var employees = _employeeLogic.GetEmployees();
             return Ok(employees);
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetEmployees(int id)
+        public IActionResult GetEmployee(int id)
         {
-            var employees = await _employeeLogic.GetEmployee(id);
+            var employees = _employeeLogic.GetEmployee(id);
             return Ok(employees);
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddEmployee([FromBody] CreateEmployeeDto createEmployeeDto)
+        public IActionResult AddEmployee([FromBody] CreateEmployeeDto createEmployeeDto)
         {
-            var employeeDto = await _employeeLogic.AddEmployee(createEmployeeDto);
+            var employeeDto = _employeeLogic.AddEmployee(createEmployeeDto);
             return Created($"v1/employees/{employeeDto.Id}", employeeDto);
         }
     }

@@ -2,6 +2,6 @@ namespace NetCoreApi.Configuration
 {
     public class DatabaseConfiguration
     {
-        public string connectionString { get; set; }
+        public string ConnectionString { get; set; }
     }
 }

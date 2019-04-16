@@ -1,15 +1,11 @@
 using Microsoft.EntityFrameworkCore;
+using NetCoreApi.Configuration;
 using NetCoreApi.Model;
 
-namespace NetCoreApi.Repositories
+namespace NetCoreApi.Repositories.Db
 {
-    public class EmployeeContext : DbContext
+    public class EmployeeDb 
     {
-        public DbSet<Employee> Employee { get; set; }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlite("");
-        }
+        
     }
 }

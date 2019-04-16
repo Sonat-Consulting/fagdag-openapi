@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using LiteDB;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -7,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using NetCoreApi.BusinessLogic;
 using NetCoreApi.Configuration;
 using NetCoreApi.Repositories;
+using NetCoreApi.Repositories.Db;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
@@ -30,7 +32,8 @@ namespace NetCoreApi
 
             services.AddSingleton(databaseConfiguration);
             services.AddSingleton<IEmployeeLogic, EmployeeLogic>();
-            services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            services.AddSingleton<IEmployeeRepository, EmployeeRepository>();
+            
 
             services.AddMvc()
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_1)

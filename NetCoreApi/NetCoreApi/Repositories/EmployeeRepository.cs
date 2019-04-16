@@ -1,35 +1,47 @@
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
+using LiteDB;
+using Microsoft.EntityFrameworkCore;
 using NetCoreApi.Model;
+using NetCoreApi.Repositories.Db;
 
 namespace NetCoreApi.Repositories
 {
     public class EmployeeRepository : IEmployeeRepository
     {
-        public async Task<List<Employee>> GetEmployees()
+
+        public List<Employee> GetEmployees()
         {
-            using (var db = new EmployeeContext())
+            List<Employee> findAll;
+            using (var db = new LiteDatabase(@"c:\temp\MyData.db"))
             {
-                var employee = await db.Employee.FindAsync(1);
-                return new List<Employee> {employee};
+                findAll = db.GetCollection<Employee>("employees").FindAll().ToList();    
             }
+            
+            return findAll;
         }
 
-        public async Task<Employee> AddEmployee(Employee employee)
+        public Employee AddEmployee(Employee employee)
         {
-            using (var db = new EmployeeContext())
+            using (var db = new LiteDatabase(@"c:\temp\MyData.db"))
             {
-                var entityEntry = await db.Employee.AddAsync(employee);
-                return entityEntry.Entity;
+                //Id blir auto incrementert
+                db.GetCollection<Employee>("employees").Insert(employee);
             }
+
+            return employee;
         }
 
-        public async Task<Employee> GetEmployee(int id)
+        public Employee GetEmployee(int id)
         {
-            using (var db = new EmployeeContext())
+            Employee employee;
+            using (var db = new LiteDatabase(@"c:\temp\MyData.db"))
             {
-                return await db.Employee.FindAsync(id);
+                employee = db.GetCollection<Employee>("employees").Find(x => x.Id == id).SingleOrDefault();
             }
+
+            return employee;
         }
     }
 }

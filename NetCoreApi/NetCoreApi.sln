@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreApi", "NetCoreApi\NetCoreApi.csproj", "{6AF67B6D-A5C7-4447-81D6-262499249B8F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreApi.IntegrationTests", "NetCoreApi.IntegrationTests\NetCoreApi.IntegrationTests.csproj", "{74B2C292-2617-45EF-B78B-645650B64FA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{6AF67B6D-A5C7-4447-81D6-262499249B8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AF67B6D-A5C7-4447-81D6-262499249B8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AF67B6D-A5C7-4447-81D6-262499249B8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74B2C292-2617-45EF-B78B-645650B64FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74B2C292-2617-45EF-B78B-645650B64FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74B2C292-2617-45EF-B78B-645650B64FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74B2C292-2617-45EF-B78B-645650B64FA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
