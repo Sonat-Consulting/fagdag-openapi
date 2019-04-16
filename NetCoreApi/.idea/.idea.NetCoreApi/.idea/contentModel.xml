@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Git\fagdag-openapi\NetCoreApi" t="IncludeFlat">
+      <e p="NetCoreApi" t="IncludeRecursive">
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BusinessLogic" t="Include">
+          <e p="EmployeeLogic.cs" t="Include" />
+          <e p="IEmployeeLogic.cs" t="Include" />
+        </e>
+        <e p="Contracts" t="Include">
+          <e p="Employe.yaml" t="Include" />
+        </e>
+        <e p="Controllers" t="Include">
+          <e p="EmplyeeController.cs" t="Include" />
+        </e>
+        <e p="Model" t="Include">
+          <e p="Employee.cs" t="Include" />
+        </e>
+        <e p="NetCoreApi.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="NetCoreApi.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="Db" t="Include">
+            <e p="EmployeeContext.cs" t="Include" />
+          </e>
+          <e p="EmployeeRepository.cs" t="Include" />
+          <e p="IEmployeeRepository.cs" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+      </e>
+      <e p="NetCoreApi.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\stihau\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\stihau\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_NetCoreApi.-1864586140.00" t="ExcludeRecursive" />
+  </component>
+</project>
