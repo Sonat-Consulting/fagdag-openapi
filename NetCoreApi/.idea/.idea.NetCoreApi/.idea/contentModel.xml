@@ -9,11 +9,14 @@
           <e p="EmployeeLogic.cs" t="Include" />
           <e p="IEmployeeLogic.cs" t="Include" />
         </e>
+        <e p="Configuration" t="Include">
+          <e p="Database.cs" t="Include" />
+        </e>
         <e p="Contracts" t="Include">
           <e p="Employe.yaml" t="Include" />
         </e>
         <e p="Controllers" t="Include">
-          <e p="EmplyeeController.cs" t="Include" />
+          <e p="EmployeeController.cs" t="Include" />
         </e>
         <e p="Model" t="Include">
           <e p="Employee.cs" t="Include" />
@@ -38,6 +41,10 @@
           <e p="IEmployeeRepository.cs" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
+        <e p="Views" t="Include">
+          <e p="CreateEmployeeDto.cs" t="Include" />
+          <e p="EmployeeDto.cs" t="Include" />
+        </e>
       </e>
       <e p="NetCoreApi.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />

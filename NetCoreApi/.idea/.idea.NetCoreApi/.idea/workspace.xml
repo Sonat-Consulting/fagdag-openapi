@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9059e2f1-0208-4481-92e0-5b1823eb0c58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/NetCoreApi/BusinessLogic/EmployeeLogic.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NetCoreApi/BusinessLogic/IEmployeeLogic.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NetCoreApi/Contracts/Employe.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NetCoreApi/Model/Employee.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NetCoreApi/Repositories/Db/EmployeeContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NetCoreApi/Repositories/EmployeeRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NetCoreApi/Repositories/IEmployeeRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetCoreApi/Configuration/Database.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetCoreApi/Controllers/EmployeeController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetCoreApi/Views/CreateEmployeeDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetCoreApi/Views/EmployeeDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NetCoreApi/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetCoreApi/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NetCoreApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetCoreApi/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetCoreApi/BusinessLogic/EmployeeLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreApi/BusinessLogic/EmployeeLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetCoreApi/BusinessLogic/IEmployeeLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreApi/BusinessLogic/IEmployeeLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetCoreApi/Controllers/EmplyeeController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetCoreApi/Repositories/Db/EmployeeContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreApi/Repositories/Db/EmployeeContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetCoreApi/Repositories/EmployeeRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreApi/Repositories/EmployeeRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetCoreApi/Repositories/IEmployeeRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreApi/Repositories/IEmployeeRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetCoreApi/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreApi/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetCoreApi/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/NetCoreApi/appsettings.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,31 +25,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/NetCoreApi/Controllers/EmplyeeController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-              <folding>
-                <marker date="1555399194609" expanded="true" signature="6:61" ph="..." />
-                <marker date="1555399194609" expanded="true" signature="127:651" ph="{...}" />
-                <marker date="1555399194609" expanded="true" signature="261:649" ph="{...}" />
-                <marker date="1555399194609" expanded="true" signature="385:449" ph="{...}" />
-                <marker date="1555399194609" expanded="true" signature="524:643" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NetCoreApi/BusinessLogic/IEmployeeLogic.cs">
+        <entry file="file://$PROJECT_DIR$/NetCoreApi/Controllers/EmployeeController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+            <state relative-caret-position="390">
+              <caret line="30" column="57" lean-forward="true" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
               <folding>
-                <marker date="1555399194647" expanded="true" signature="6:87" ph="..." />
-                <marker date="1555399194647" expanded="true" signature="123:220" ph="{...}" />
-                <marker date="1555399194647" expanded="true" signature="161:218" ph="{...}" />
+                <marker date="1555402077148" expanded="false" signature="6:141" ph="..." />
+                <marker date="1555402077148" expanded="true" signature="175:1229" ph="{...}" />
+                <marker date="1555402077148" expanded="true" signature="312:1227" ph="{...}" />
+                <marker date="1555402077148" expanded="true" signature="439:503" ph="{...}" />
+                <marker date="1555402077148" expanded="true" signature="578:697" ph="{...}" />
+                <marker date="1555402077148" expanded="true" signature="794:914" ph="{...}" />
+                <marker date="1555402077148" expanded="true" signature="1043:1221" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -51,59 +46,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NetCoreApi/BusinessLogic/EmployeeLogic.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="19" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="19" />
+            <state relative-caret-position="465">
+              <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
               <folding>
-                <marker date="1555399147418" expanded="true" signature="6:87" ph="..." />
-                <marker date="1555399147418" expanded="true" signature="154:567" ph="{...}" />
-                <marker date="1555399147418" expanded="true" signature="204:565" ph="{...}" />
-                <marker date="1555399147418" expanded="true" signature="346:420" ph="{...}" />
-                <marker date="1555399147418" expanded="true" signature="478:559" ph="{...}" />
+                <marker date="1555402077116" expanded="false" signature="6:142" ph="..." />
+                <marker date="1555402077116" expanded="true" signature="178:1095" ph="{...}" />
+                <marker date="1555402077116" expanded="true" signature="228:1093" ph="{...}" />
+                <marker date="1555402077116" expanded="true" signature="370:444" ph="{...}" />
+                <marker date="1555402077116" expanded="true" signature="502:583" ph="{...}" />
+                <marker date="1555402077116" expanded="true" signature="669:948" ph="{...}" />
+                <marker date="1555402077116" expanded="true" signature="732:856" ph="{...}" />
+                <marker date="1555402077116" expanded="true" signature="1005:1087" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NetCoreApi/Repositories/EmployeeRepository.cs">
+        <entry file="file://$PROJECT_DIR$/NetCoreApi/BusinessLogic/IEmployeeLogic.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            <state relative-caret-position="60">
+              <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
               <folding>
-                <marker date="1555398988137" expanded="false" signature="6:124" ph="..." />
-                <marker date="1555398988137" expanded="true" signature="159:486" ph="{...}" />
-                <marker date="1555398988137" expanded="true" signature="198:484" ph="{...}" />
-                <marker date="1555398988137" expanded="true" signature="262:478" ph="{...}" />
-                <marker date="1555398988137" expanded="true" signature="323:467" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NetCoreApi/Repositories/Db/EmployeeContext.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-              <folding>
-                <marker date="1555398788042" expanded="false" signature="6:94" ph="..." />
-                <marker date="1555398788042" expanded="true" signature="129:425" ph="{...}" />
-                <marker date="1555398788042" expanded="true" signature="176:423" ph="{...}" />
-                <marker date="1555398788042" expanded="true" signature="322:407" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NetCoreApi/Repositories/IEmployeeRepository.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-              <folding>
-                <marker date="1555399132665" expanded="false" signature="6:87" ph="..." />
-                <marker date="1555399132665" expanded="true" signature="122:224" ph="{...}" />
-                <marker date="1555399132665" expanded="true" signature="165:222" ph="{...}" />
+                <marker date="1555401977630" expanded="false" signature="6:111" ph="..." />
+                <marker date="1555401977630" expanded="true" signature="147:359" ph="{...}" />
+                <marker date="1555401977630" expanded="true" signature="185:357" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -112,8 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NetCoreApi/Model/Employee.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+            <state relative-caret-position="90">
+              <caret line="6" column="43" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="6" selection-end-column="43" />
               <folding>
                 <marker date="1555398304950" expanded="true" signature="26:194" ph="{...}" />
                 <marker date="1555398304950" expanded="true" signature="54:192" ph="{...}" />
@@ -123,10 +90,77 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NetCoreApi/Startup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="36" column="29" lean-forward="true" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+              <folding>
+                <marker date="1555401205778" expanded="false" signature="6:323" ph="..." />
+                <marker date="1555401205778" expanded="true" signature="497:2277" ph="{...}" />
+                <marker date="1555401205778" expanded="true" signature="524:2275" ph="{...}" />
+                <marker date="1555401205778" expanded="true" signature="637:700" ph="{...}" />
+                <marker date="1555401205778" expanded="true" signature="709:924" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
+                <marker date="1555401205778" expanded="true" signature="991:1850" ph="{...}" />
+                <marker date="1555401205778" expanded="true" signature="1523:1838" ph="{...}" />
+                <marker date="1555401205778" expanded="true" signature="2038:2269" ph="{...}" />
+                <marker date="1555401205778" expanded="true" signature="2085:2162" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NetCoreApi/Contracts/Employe.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+            <state relative-caret-position="480">
+              <caret line="32" column="30" lean-forward="true" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NetCoreApi/Configuration/Database.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+              <folding>
+                <marker date="1555401073376" expanded="true" signature="34:146" ph="{...}" />
+                <marker date="1555401073376" expanded="true" signature="75:144" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NetCoreApi/Repositories/EmployeeRepository.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+              <folding>
+                <marker date="1555402068340" expanded="false" signature="6:176" ph="..." />
+                <marker date="1555402068340" expanded="true" signature="211:1051" ph="{...}" />
+                <marker date="1555402068340" expanded="true" signature="270:1049" ph="{...}" />
+                <marker date="1555402068340" expanded="true" signature="333:549" ph="{...}" />
+                <marker date="1555402068340" expanded="true" signature="394:538" ph="{...}" />
+                <marker date="1555402068340" expanded="true" signature="617:831" ph="{...}" />
+                <marker date="1555402068340" expanded="true" signature="678:821" ph="{...}" />
+                <marker date="1555402068340" expanded="true" signature="888:1043" ph="{...}" />
+                <marker date="1555402068340" expanded="true" signature="949:1033" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NetCoreApi/Repositories/IEmployeeRepository.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+              <folding>
+                <marker date="1555402022197" expanded="false" signature="6:87" ph="..." />
+                <marker date="1555402022197" expanded="true" signature="122:323" ph="{...}" />
+                <marker date="1555402022197" expanded="true" signature="165:321" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,11 +172,15 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/NetCoreApi/Repositories/IEmployeeRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NetCoreApi/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NetCoreApi/Configuration/Database.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NetCoreApi/Views/EmployeeDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NetCoreApi/Model/Employee.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NetCoreApi/Repositories/Db/EmployeeContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NetCoreApi/Repositories/EmployeeRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NetCoreApi/Views/CreateEmployeeDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NetCoreApi/BusinessLogic/EmployeeLogic.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/NetCoreApi/Controllers/EmplyeeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NetCoreApi/Controllers/EmployeeController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NetCoreApi/BusinessLogic/IEmployeeLogic.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -153,12 +191,19 @@
         <option value="$PROJECT_DIR$/NetCoreApi/Model/Employee.cs" />
         <option value="$PROJECT_DIR$/NetCoreApi/Repositories/IEmployeeContext.cs" />
         <option value="$PROJECT_DIR$/NetCoreApi/Repositories/EmployeeContext.cs" />
+        <option value="$PROJECT_DIR$/NetCoreApi/Configuration/DbConnection.cs" />
         <option value="$PROJECT_DIR$/NetCoreApi/Repositories/Db/EmployeeContext.cs" />
-        <option value="$PROJECT_DIR$/NetCoreApi/Repositories/EmployeeRepository.cs" />
-        <option value="$PROJECT_DIR$/NetCoreApi/BusinessLogic/IEmployeeLogic.cs" />
-        <option value="$PROJECT_DIR$/NetCoreApi/Repositories/IEmployeeRepository.cs" />
-        <option value="$PROJECT_DIR$/NetCoreApi/BusinessLogic/EmployeeLogic.cs" />
+        <option value="$PROJECT_DIR$/NetCoreApi/appsettings.json" />
+        <option value="$PROJECT_DIR$/NetCoreApi/Configuration/Database.cs" />
+        <option value="$PROJECT_DIR$/NetCoreApi/Startup.cs" />
+        <option value="$PROJECT_DIR$/NetCoreApi/Views/CreateEmployeeDto.cs" />
+        <option value="$PROJECT_DIR$/NetCoreApi/Views/EmployeeDto.cs" />
         <option value="$PROJECT_DIR$/NetCoreApi/Controllers/EmplyeeController.cs" />
+        <option value="$PROJECT_DIR$/NetCoreApi/Controllers/EmployeeController.cs" />
+        <option value="$PROJECT_DIR$/NetCoreApi/BusinessLogic/IEmployeeLogic.cs" />
+        <option value="$PROJECT_DIR$/NetCoreApi/BusinessLogic/EmployeeLogic.cs" />
+        <option value="$PROJECT_DIR$/NetCoreApi/Repositories/IEmployeeRepository.cs" />
+        <option value="$PROJECT_DIR$/NetCoreApi/Repositories/EmployeeRepository.cs" />
       </list>
     </option>
   </component>
@@ -216,8 +261,7 @@
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="NetCoreApi" type="24d0babc:SolutionExplorerModelNode" />
               <item name="NetCoreApi" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Repositories" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Db" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Views" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
@@ -268,12 +312,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555397408024</updated>
-      <workItem from="1555397409175" duration="1787000" />
+      <workItem from="1555397409175" duration="3645000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1787000" />
+    <option name="totallyTimeSpent" value="3645000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -291,9 +335,9 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Image Layers" />
       <window_info id="Capture Tool" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="NuGet" visible="true" weight="0.32992125" />
+      <window_info anchor="bottom" id="NuGet" weight="0.32992125" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Unit Tests" />
@@ -302,9 +346,10 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Performance Profiler" />
+      <window_info active="true" anchor="bottom" id="Build" visible="true" weight="0.32913387" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32992125" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -332,17 +377,66 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/NetCoreApi/Contracts/Employe.yaml">
+    <entry file="file://$PROJECT_DIR$/NetCoreApi/Repositories/Db/EmployeeContext.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <folding>
+            <marker date="1555401223129" expanded="false" signature="6:94" ph="..." />
+            <marker date="1555401223129" expanded="true" signature="129:402" ph="{...}" />
+            <marker date="1555401223129" expanded="true" signature="176:400" ph="{...}" />
+            <marker date="1555401223129" expanded="true" signature="322:384" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NetCoreApi/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NetCoreApi/Configuration/Database.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+          <folding>
+            <marker date="1555401073376" expanded="true" signature="34:146" ph="{...}" />
+            <marker date="1555401073376" expanded="true" signature="75:144" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NetCoreApi/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="36" column="29" lean-forward="true" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+          <folding>
+            <marker date="1555401205778" expanded="false" signature="6:323" ph="..." />
+            <marker date="1555401205778" expanded="true" signature="497:2277" ph="{...}" />
+            <marker date="1555401205778" expanded="true" signature="524:2275" ph="{...}" />
+            <marker date="1555401205778" expanded="true" signature="637:700" ph="{...}" />
+            <marker date="1555401205778" expanded="true" signature="709:924" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
+            <marker date="1555401205778" expanded="true" signature="991:1850" ph="{...}" />
+            <marker date="1555401205778" expanded="true" signature="1523:1838" ph="{...}" />
+            <marker date="1555401205778" expanded="true" signature="2038:2269" ph="{...}" />
+            <marker date="1555401205778" expanded="true" signature="2085:2162" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NetCoreApi/Contracts/Employe.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="30" lean-forward="true" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NetCoreApi/Model/Employee.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        <state relative-caret-position="90">
+          <caret line="6" column="43" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="6" selection-end-column="43" />
           <folding>
             <marker date="1555398304950" expanded="true" signature="26:194" ph="{...}" />
             <marker date="1555398304950" expanded="true" signature="54:192" ph="{...}" />
@@ -350,81 +444,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NetCoreApi/Repositories/Db/EmployeeContext.cs">
+    <entry file="file://$PROJECT_DIR$/NetCoreApi/Views/EmployeeDto.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        <state relative-caret-position="60">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
           <folding>
-            <marker date="1555398788042" expanded="false" signature="6:94" ph="..." />
-            <marker date="1555398788042" expanded="true" signature="129:425" ph="{...}" />
-            <marker date="1555398788042" expanded="true" signature="176:423" ph="{...}" />
-            <marker date="1555398788042" expanded="true" signature="322:407" ph="{...}" />
+            <marker date="1555401547229" expanded="true" signature="26:197" ph="{...}" />
+            <marker date="1555401547229" expanded="true" signature="57:195" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NetCoreApi/Repositories/EmployeeRepository.cs">
+    <entry file="file://$PROJECT_DIR$/NetCoreApi/Views/CreateEmployeeDto.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        <state relative-caret-position="30">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
           <folding>
-            <marker date="1555398988137" expanded="false" signature="6:124" ph="..." />
-            <marker date="1555398988137" expanded="true" signature="159:486" ph="{...}" />
-            <marker date="1555398988137" expanded="true" signature="198:484" ph="{...}" />
-            <marker date="1555398988137" expanded="true" signature="262:478" ph="{...}" />
-            <marker date="1555398988137" expanded="true" signature="323:467" ph="{...}" />
+            <marker date="1555401519932" expanded="true" signature="26:167" ph="{...}" />
+            <marker date="1555401519932" expanded="true" signature="63:165" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NetCoreApi/Controllers/EmployeeController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="30" column="57" lean-forward="true" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+          <folding>
+            <marker date="1555402077148" expanded="false" signature="6:141" ph="..." />
+            <marker date="1555402077148" expanded="true" signature="175:1229" ph="{...}" />
+            <marker date="1555402077148" expanded="true" signature="312:1227" ph="{...}" />
+            <marker date="1555402077148" expanded="true" signature="439:503" ph="{...}" />
+            <marker date="1555402077148" expanded="true" signature="578:697" ph="{...}" />
+            <marker date="1555402077148" expanded="true" signature="794:914" ph="{...}" />
+            <marker date="1555402077148" expanded="true" signature="1043:1221" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NetCoreApi/BusinessLogic/IEmployeeLogic.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        <state relative-caret-position="60">
+          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
           <folding>
-            <marker date="1555399194647" expanded="true" signature="6:87" ph="..." />
-            <marker date="1555399194647" expanded="true" signature="123:220" ph="{...}" />
-            <marker date="1555399194647" expanded="true" signature="161:218" ph="{...}" />
+            <marker date="1555401977630" expanded="false" signature="6:111" ph="..." />
+            <marker date="1555401977630" expanded="true" signature="147:359" ph="{...}" />
+            <marker date="1555401977630" expanded="true" signature="185:357" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NetCoreApi/BusinessLogic/EmployeeLogic.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="19" />
+        <state relative-caret-position="465">
+          <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
           <folding>
-            <marker date="1555399147418" expanded="true" signature="6:87" ph="..." />
-            <marker date="1555399147418" expanded="true" signature="154:567" ph="{...}" />
-            <marker date="1555399147418" expanded="true" signature="204:565" ph="{...}" />
-            <marker date="1555399147418" expanded="true" signature="346:420" ph="{...}" />
-            <marker date="1555399147418" expanded="true" signature="478:559" ph="{...}" />
+            <marker date="1555402077116" expanded="false" signature="6:142" ph="..." />
+            <marker date="1555402077116" expanded="true" signature="178:1095" ph="{...}" />
+            <marker date="1555402077116" expanded="true" signature="228:1093" ph="{...}" />
+            <marker date="1555402077116" expanded="true" signature="370:444" ph="{...}" />
+            <marker date="1555402077116" expanded="true" signature="502:583" ph="{...}" />
+            <marker date="1555402077116" expanded="true" signature="669:948" ph="{...}" />
+            <marker date="1555402077116" expanded="true" signature="732:856" ph="{...}" />
+            <marker date="1555402077116" expanded="true" signature="1005:1087" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NetCoreApi/Repositories/IEmployeeRepository.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        <state relative-caret-position="60">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
           <folding>
-            <marker date="1555399132665" expanded="false" signature="6:87" ph="..." />
-            <marker date="1555399132665" expanded="true" signature="122:224" ph="{...}" />
-            <marker date="1555399132665" expanded="true" signature="165:222" ph="{...}" />
+            <marker date="1555402022197" expanded="false" signature="6:87" ph="..." />
+            <marker date="1555402022197" expanded="true" signature="122:323" ph="{...}" />
+            <marker date="1555402022197" expanded="true" signature="165:321" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NetCoreApi/Controllers/EmplyeeController.cs">
+    <entry file="file://$PROJECT_DIR$/NetCoreApi/Repositories/EmployeeRepository.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        <state relative-caret-position="285">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
           <folding>
-            <marker date="1555399194609" expanded="true" signature="6:61" ph="..." />
-            <marker date="1555399194609" expanded="true" signature="127:651" ph="{...}" />
-            <marker date="1555399194609" expanded="true" signature="261:649" ph="{...}" />
-            <marker date="1555399194609" expanded="true" signature="385:449" ph="{...}" />
-            <marker date="1555399194609" expanded="true" signature="524:643" ph="{...}" />
+            <marker date="1555402068340" expanded="false" signature="6:176" ph="..." />
+            <marker date="1555402068340" expanded="true" signature="211:1051" ph="{...}" />
+            <marker date="1555402068340" expanded="true" signature="270:1049" ph="{...}" />
+            <marker date="1555402068340" expanded="true" signature="333:549" ph="{...}" />
+            <marker date="1555402068340" expanded="true" signature="394:538" ph="{...}" />
+            <marker date="1555402068340" expanded="true" signature="617:831" ph="{...}" />
+            <marker date="1555402068340" expanded="true" signature="678:821" ph="{...}" />
+            <marker date="1555402068340" expanded="true" signature="888:1043" ph="{...}" />
+            <marker date="1555402068340" expanded="true" signature="949:1033" ph="{...}" />
           </folding>
         </state>
       </provider>
