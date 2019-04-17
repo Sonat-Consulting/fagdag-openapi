@@ -6,7 +6,7 @@ using NetCoreApi.Views;
 namespace NetCoreApi.Controllers
 {
     [Produces("application/json")]
-    [Route("v1/employee")]
+    [Route("v1/employees")]
     [ApiController]
     public class EmployeeController : ControllerBase
     {
@@ -30,8 +30,9 @@ namespace NetCoreApi.Controllers
             _employeeLogic.UpdateEmployee(employeeDto);
             return NoContent();
         }
-        
-        [HttpDelete]
+
+        [HttpDelete("{id}")]
+
         public IActionResult DeleteEmployee(int id)
         {
             _employeeLogic.DeleteEmployee(id);
