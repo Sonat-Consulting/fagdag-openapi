@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using NetCoreApi.BusinessLogic;
 using NetCoreApi.Configuration;
+using NetCoreApi.Middleware;
 using NetCoreApi.Repositories;
 using NetCoreApi.Repositories.Db;
 using Newtonsoft.Json;
@@ -50,6 +51,8 @@ namespace NetCoreApi
         {
             if (env.IsDevelopment()) app.UseDeveloperExceptionPage();
 
+            app.UseMiddleware<ExceptionMiddleware>();
+            app.UseMvc();
             app.Run(async context => { await context.Response.WriteAsync("Hello World!"); });
         }
     }

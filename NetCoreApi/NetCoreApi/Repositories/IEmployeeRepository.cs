@@ -9,5 +9,7 @@ namespace NetCoreApi.Repositories
         List<Employee> GetEmployees();
         Employee AddEmployee(Employee employee);
         Employee GetEmployee(int id);
+        void UpdateEmployee(Employee employee);
+        void DeleteEmployee(int id);
     }
 }

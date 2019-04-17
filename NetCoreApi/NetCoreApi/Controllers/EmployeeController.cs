@@ -17,6 +17,27 @@ namespace NetCoreApi.Controllers
             _employeeLogic = employeeLogic;
         }
 
+        [HttpPost]
+        public IActionResult AddEmployee([FromBody] NewEmployeeDto newEmployeeDto)
+        {
+            var employeeDto = _employeeLogic.AddEmployee(newEmployeeDto);
+            return Created($"v1/employees/{employeeDto.Id}", employeeDto);
+        }
+        
+        [HttpPut]
+        public IActionResult UpdateEmployee([FromBody] EmployeeDto employeeDto)
+        {
+            _employeeLogic.UpdateEmployee(employeeDto);
+            return NoContent();
+        }
+        
+        [HttpDelete]
+        public IActionResult DeleteEmployee(int id)
+        {
+            _employeeLogic.DeleteEmployee(id);
+            return NoContent();
+        }
+
         [HttpGet]
         public IActionResult GetEmployees()
         {
@@ -29,13 +50,6 @@ namespace NetCoreApi.Controllers
         {
             var employees = _employeeLogic.GetEmployee(id);
             return Ok(employees);
-        }
-
-        [HttpPost]
-        public IActionResult AddEmployee([FromBody] CreateEmployeeDto createEmployeeDto)
-        {
-            var employeeDto = _employeeLogic.AddEmployee(createEmployeeDto);
-            return Created($"v1/employees/{employeeDto.Id}", employeeDto);
         }
     }
 }

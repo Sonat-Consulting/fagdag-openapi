@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using NetCoreApi.BusinessLogic;
 using NetCoreApi.Configuration;
 using NetCoreApi.Controllers;
+using NetCoreApi.Exceptions;
 using NetCoreApi.Model;
 using NetCoreApi.Repositories;
 using NetCoreApi.Repositories.Db;
@@ -48,10 +49,41 @@ namespace NetCoreApi.IntegrationTests
         [Test]
         public void AddEmployeeTest()
         {
-            var addEmployee = (CreatedResult) _employeeController.AddEmployee(new CreateEmployeeDto {Firstname = $"stig {DateTime.Now.Second}", Surname = $"{DateTime.Now.Minute}Hausberg"});
+            var addEmployee = (CreatedResult) _employeeController.AddEmployee(new NewEmployeeDto {Firstname = $"stig {DateTime.Now.Second}", Surname = $"{DateTime.Now.Minute}Hausberg"});
             var addEmployeeValue = (Employee)addEmployee.Value;
             Assert.IsTrue(addEmployeeValue.Id != 0);
             Console.Write(JsonConvert.SerializeObject(addEmployee));
+        }
+        
+        [Test]
+        public void UpdateEmployeeTest()
+        {
+            var employee = (OkObjectResult) _employeeController.GetEmployee(1);
+            var employeeValue = (Employee)employee.Value;
+            
+            _employeeController.UpdateEmployee(new EmployeeDto {Id = 1, Firstname = $"stigen {DateTime.Now.Millisecond}", Surname = $"Hausberg"});
+            
+            var employee2 = (OkObjectResult) _employeeController.GetEmployee(1);
+            var employeeValue2 = (Employee)employee2.Value;
+            
+            Assert.AreNotSame(employeeValue.Firstname, employeeValue2.Firstname);
+            Console.Write(JsonConvert.SerializeObject(employee));
+        }
+        
+        [Test]
+        public void DeleteEmployeeTest()
+        {
+            var addEmployee = (CreatedResult) _employeeController.AddEmployee(new NewEmployeeDto {Firstname = $"stig {DateTime.Now.Second}", Surname = $"{DateTime.Now.Minute}Hausberg"});
+            var addEmployeeValue = (Employee)addEmployee.Value;
+            Assert.IsTrue(addEmployeeValue.Id != 0);
+            
+            var employee = (OkObjectResult) _employeeController.GetEmployee(addEmployeeValue.Id);
+            Assert.IsNotNull(employee);
+            var employeeValue = (Employee)employee.Value;
+            
+            _employeeController.DeleteEmployee(addEmployeeValue.Id);
+            Assert.Throws<NotFoundException>(() => _employeeController.GetEmployee(addEmployeeValue.Id));
+            
         }
         
         [Test]

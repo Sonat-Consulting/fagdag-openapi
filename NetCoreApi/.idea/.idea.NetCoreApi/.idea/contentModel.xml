@@ -18,8 +18,18 @@
         <e p="Controllers" t="Include">
           <e p="EmployeeController.cs" t="Include" />
         </e>
+        <e p="Exceptions" t="Include">
+          <e p="BadRequestException.cs" t="Include" />
+          <e p="BaseException.cs" t="Include" />
+          <e p="MappingException.cs" t="Include" />
+          <e p="NotFoundException.cs" t="Include" />
+        </e>
+        <e p="Middleware" t="Include">
+          <e p="ExceptionMiddleware.cs" t="Include" />
+        </e>
         <e p="Model" t="Include">
           <e p="Employee.cs" t="Include" />
+          <e p="NewEmployee.cs" t="Include" />
         </e>
         <e p="NetCoreApi.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -42,8 +52,8 @@
         </e>
         <e p="Startup.cs" t="Include" />
         <e p="Views" t="Include">
-          <e p="CreateEmployeeDto.cs" t="Include" />
           <e p="EmployeeDto.cs" t="Include" />
+          <e p="NewEmployeeDto.cs" t="Include" />
         </e>
       </e>
       <e p="NetCoreApi.IntegrationTests" t="IncludeRecursive">

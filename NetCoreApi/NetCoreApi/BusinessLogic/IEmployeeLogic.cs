@@ -10,7 +10,9 @@ namespace NetCoreApi.BusinessLogic
         Employee GetEmployee(int id);
         
         List<Employee> GetEmployees();
-        Employee AddEmployee(CreateEmployeeDto createEmployee);
-        
+        Employee AddEmployee(NewEmployeeDto newEmployee);
+
+        void UpdateEmployee(EmployeeDto employeeDto);
+        void DeleteEmployee(int id);
     }
 }
