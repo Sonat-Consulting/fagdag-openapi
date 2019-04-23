@@ -3,7 +3,7 @@ dry-run: null
 hookfiles: null
 language: nodejs
 require: null
-server: dotnet run --project ../NetCoreApi/NetCoreApi --urls http://127.0.0.1:3000
+server: 'dotnet run --project ../NetCoreApi/NetCoreApi --urls http://127.0.0.1:3000'
 server-wait: 3
 init: false
 custom: {}

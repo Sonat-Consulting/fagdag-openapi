@@ -116,7 +116,7 @@ definitions:
       required:
         - id
         - firstname
-        - surname
+        - lastname
       properties:
         id:
           type: integer
@@ -124,7 +124,7 @@ definitions:
         firstname:
           type: string
           example: Espen
-        surname:
+        lastname:
           type: string
           example: Kvalheim
   Id:
