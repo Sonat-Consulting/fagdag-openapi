@@ -4,6 +4,14 @@
 # fordi VS 2015 er oppfinnsom
 .gitattributes
 
+# JetBrains Rider
+
+*/.idea*/**/*
+.idea*/*
+*.iml
+*.ipr
+
+
 # User-specific files
 *.suo
 *.user
