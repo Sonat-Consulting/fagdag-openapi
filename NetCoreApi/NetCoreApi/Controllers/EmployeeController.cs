@@ -32,7 +32,6 @@ namespace NetCoreApi.Controllers
         }
 
         [HttpDelete("{id}")]
-
         public IActionResult DeleteEmployee(int id)
         {
             _employeeLogic.DeleteEmployee(id);
