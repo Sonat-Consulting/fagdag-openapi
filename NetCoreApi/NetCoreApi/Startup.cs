@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -72,9 +73,9 @@ namespace NetCoreApi
         {
             if (env.IsDevelopment()) app.UseDeveloperExceptionPage();
 
-            app.UseAuthentication();
             app.UseMiddleware<ExceptionMiddleware>();
             app.UseMvc();
+            app.UseAuthentication();
             app.Run(async context => { await context.Response.WriteAsync("Hello World!"); });
         }
     }
