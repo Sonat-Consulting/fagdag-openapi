@@ -1,0 +1,30 @@
+# Sonat employee
+# Sonat employee api
+
+###
+
+# Returns all employees
+GET {{host}}/employees
+
+###
+
+# Add a new employee
+POST {{host}}/employees
+
+###
+
+# Update an existing employee
+PUT {{host}}/employees
+
+###
+
+# Find employee by ID
+# 
+# Returns a single employee
+GET {{host}}/employees/{{param_employeeId}}
+
+###
+
+# Delete an employee
+DELETE {{host}}/employees/{{param_employeeId}}
+

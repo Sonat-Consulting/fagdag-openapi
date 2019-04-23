@@ -14,4 +14,7 @@ En ansatt representeres som Employee objekt med følgende egenskaper:
         { Id, FirstName, LastName }
 
 # Oppgave 1
-Lag en [OpenAPI spesifikasjon](http://dev.nodeca.com) som definerer kontrakten. Benytt gjerne [SwaggerHub](https://swagger.io/tools/swaggerhub/) som editor, og "api auto mocking".
+Lag en [OpenAPI spesifikasjon](http://dev.nodeca.com) som definerer kontrakten. Om du ønsker, kan du benytte [SwaggerEditor](https://editor.swagger.io).
+
+# Oppgave 2
+Implementer api som du definerte i Oppgave 1
