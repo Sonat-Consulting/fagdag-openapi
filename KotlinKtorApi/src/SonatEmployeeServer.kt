@@ -18,8 +18,10 @@ class SonatEmployeeServer() {
      * Employee
      */
     fun Routing.registerEmployee() {
-        get("/employees") {
-            call.respond(listOf(Employee(1, "Lars", "Aaberg")))
+        authenticate("auth") {
+            get("/employees") {
+                call.respond(listOf(Employee(1, "Lars", "Aaberg")))
+            }
         }
 
         post("/employees") {
