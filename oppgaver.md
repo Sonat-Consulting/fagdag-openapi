@@ -14,15 +14,15 @@ En ansatt representeres som Employee objekt med følgende egenskaper:
         { Id, FirstName, LastName }
 
 # Oppgave 1
-Lag en [OpenAPI spesifikasjon](http://dev.nodeca.com) som definerer kontrakten. Om du ønsker, kan du benytte [SwaggerEditor](https://editor.swagger.io).
+Lag en [OpenAPI spesifikasjon](https://swagger.io/docs/specification/about/) som definerer kontrakten. Om du ønsker, kan du benytte [SwaggerEditor](https://editor.swagger.io).
 
 # Oppgave 2
 Implementer api som du definerte i Oppgave 1. Programmeringsspråk er valgfritt. 
 
 Du finner eksempelkode for:
-[.net core](https://github.com/Sonat-Consulting/fagdag-openapi/tree/master/NetCoreApi)
-[Kotlin](https://github.com/Sonat-Consulting/fagdag-openapi/tree/master/KotlinKtorApi)
-[Node.js](https://github.com/Sonat-Consulting/fagdag-openapi/tree/master/NodeApi)
+- [.net core](https://github.com/Sonat-Consulting/fagdag-openapi/tree/master/NetCoreApi)
+- [Kotlin](https://github.com/Sonat-Consulting/fagdag-openapi/tree/master/KotlinKtorApi)
+- [Node.js](https://github.com/Sonat-Consulting/fagdag-openapi/tree/master/NodeApi)
 
 
 # Oppgave 4
