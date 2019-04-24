@@ -18,3 +18,34 @@ Lag en [OpenAPI spesifikasjon](http://dev.nodeca.com) som definerer kontrakten. 
 
 # Oppgave 2
 Implementer api som du definerte i Oppgave 1
+
+
+# Oppgave 4
+#### Sikre tilgangen til APIet ditt med autentisering og tilgangsstyring.
+
+Følgende oppsett fra Auth0 kan brukes:    
+**Authority/Domain:** https://sonat.eu.auth0.com/    
+**Audience:** https://auth.sonat.dev
+
+For å få en token, kan du logge inn på denne siden:   
+https://auth-tester.sonat.dev
+
+På siden får du se din id token og access token. Du kan se på innhold av 
+tokenet på https://jwt.io
+
+Access tokenet skal ha et permissions-claim, som inneholder `read:employees`.
+I tillegg er der definert en tilgang som hetter `modify:employees`. Denne 
+kan settes opp manuelt. Gi en lyd til arrangørende av fagdagen 
+for å gjøre dette for en bruker.
+
+Sett opp tilgang slik:
+* at brukere med `read:employee` permissions får tilgang til `GET` 
+endepunktene i APIet.
+* og brukere med `modify:employee` permissions får tilgang til `POST`, 
+`PUT` og `DELETE` endepunktene.
+
+Der finnes eksempel på hvordan dette gjøres for .net her:   
+https://auth0.com/docs/quickstart/backend/aspnet-core-webapi
+
+Se også gjerne på eksempel implementasjonene vi har laget på github:
+https://github.com/Sonat-Consulting/fagdag-openapi
