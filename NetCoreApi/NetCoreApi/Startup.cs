@@ -57,14 +57,15 @@ namespace NetCoreApi
             });
             services.AddAuthorization(options =>
             {
-                options.AddPolicy("read:employees",
+                options.AddPolicy("read",
                     policy => policy.Requirements.Add(new HasPermissionRequirements("read:employees",
                         "https://sonat.eu.auth0.com/")));
-                options.AddPolicy("modify:employees",
+                options.AddPolicy("modify",
                     policy => policy.Requirements.Add(new HasPermissionRequirements("modify:employees",
                         "https://sonat.eu.auth0.com")));
             });
             services.AddSingleton<IAuthorizationHandler, HasPermissionHandler>();
+            services.BuildServiceProvider();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -73,8 +74,8 @@ namespace NetCoreApi
             if (env.IsDevelopment()) app.UseDeveloperExceptionPage();
 
             app.UseMiddleware<ExceptionMiddleware>();
-            app.UseMvc();
             app.UseAuthentication();
+            app.UseMvc();
             app.Run(async context => { await context.Response.WriteAsync("Hello World!"); });
         }
     }

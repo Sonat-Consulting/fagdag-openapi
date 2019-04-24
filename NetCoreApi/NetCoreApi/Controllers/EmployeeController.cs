@@ -18,7 +18,7 @@ namespace NetCoreApi.Controllers
         }
 
         [HttpPost]
-        [Authorize("modify:employees")]
+        [Authorize("modify")]
         public IActionResult AddEmployee([FromBody] NewEmployeeDto newEmployeeDto)
         {
             var employeeDto = _employeeLogic.AddEmployee(newEmployeeDto);
@@ -26,7 +26,7 @@ namespace NetCoreApi.Controllers
         }
         
         [HttpPut]
-        [Authorize("modify:employees")]
+        [Authorize("modify")]
         public IActionResult UpdateEmployee([FromBody] EmployeeDto employeeDto)
         {
             _employeeLogic.UpdateEmployee(employeeDto);
@@ -34,7 +34,7 @@ namespace NetCoreApi.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Authorize("modify:employees")]
+        [Authorize("modify")]
         public IActionResult DeleteEmployee(int id)
         {
             _employeeLogic.DeleteEmployee(id);
@@ -42,7 +42,7 @@ namespace NetCoreApi.Controllers
         }
 
         [HttpGet]
-        [Authorize("read:employees")]
+        [Authorize("read")]
         public IActionResult GetEmployees()
         {
             var employees = _employeeLogic.GetEmployees();
@@ -50,7 +50,7 @@ namespace NetCoreApi.Controllers
         }
 
         [HttpGet("{id}")]
-        [Authorize("read:employees")]
+        [Authorize("read")]
         public IActionResult GetEmployee(int id)
         {
             var employees = _employeeLogic.GetEmployee(id);
