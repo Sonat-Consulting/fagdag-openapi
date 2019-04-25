@@ -1,9 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const { verifyToken, permissions } = require('./authentication');
+const port = 8084;
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
-const port = 8084;
 
 let users = {
     1: { id: 1, firstName: 'Ola', lastName: 'Nordmann' },
@@ -19,12 +20,12 @@ app.get('/users', (req, res) => {
     return res.send(Object.values(users));
 });
 
-app.get('/users/:userId', (req, res) => {
+app.get('/users/:userId', verifyToken(permissions.read), (req, res) => {
     console.log("GET", req.params.userId);
     return res.send(users[req.params.userId]);
 });
 
-app.post('/user', (req, res) => {
+app.post('/user', verifyToken(permissions.write), (req, res) => {
     console.log("POST", req.body);
     const id = newId();
     const newUser = { id, ...req.body }
@@ -33,23 +34,23 @@ app.post('/user', (req, res) => {
     return res.send(newUser);
 });
 
-app.put('/user/:userId', (req, res) => {
+app.put('/user/:userId', verifyToken(permissions.write), (req, res) => {
     const id = req.params.userId;
-    console.log("PUT", {id, body: req.body});
+    console.log("PUT", { id, body: req.body });
 
-    users[id] = {...users[id], ...req.body};
+    users[id] = { ...users[id], ...req.body };
 
     return res.send(users[id]);
 });
-  
-app.delete('/user/:userId', (req, res) => {
+
+app.delete('/user/:userId', verifyToken(permissions.write), (req, res) => {
     const id = req.params.userId;
     console.log("DELETE", id);
 
     delete users[id];
 
     return res.send();
-  });
+});
 
 app.listen(port, () => {
     console.log('We are live on ' + port);
