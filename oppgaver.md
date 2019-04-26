@@ -24,6 +24,8 @@ Du finner eksempelkode for:
 - [Kotlin](https://github.com/Sonat-Consulting/fagdag-openapi/tree/master/KotlinKtorApi)
 - [Node.js](https://github.com/Sonat-Consulting/fagdag-openapi/tree/master/NodeApi)
 
+# Oppgave 3
+Implementer testing i postman
 
 # Oppgave 4
 #### Sikre tilgangen til APIet ditt med autentisering og tilgangsstyring.
