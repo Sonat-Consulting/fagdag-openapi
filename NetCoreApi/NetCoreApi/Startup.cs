@@ -62,7 +62,7 @@ namespace NetCoreApi
                         "https://sonat.eu.auth0.com/")));
                 options.AddPolicy("modify",
                     policy => policy.Requirements.Add(new HasPermissionRequirements("modify:employees",
-                        "https://sonat.eu.auth0.com")));
+                        "https://sonat.eu.auth0.com/")));
             });
             services.AddSingleton<IAuthorizationHandler, HasPermissionHandler>();
             services.BuildServiceProvider();

@@ -13,9 +13,9 @@ namespace NetCoreApi.Security
                 return Task.CompletedTask;
             }
 
-            var permissions = context.User.FindFirst(claim => claim.Type == "permissions" && claim.Issuer == requirement.Issuer)
-                .Value.Split(' ');
-
+            var permissions =
+                context.User.FindAll(claim => claim.Type == "permissions" && claim.Issuer == requirement.Issuer).Select(claim => claim.Value);
+            
             if (permissions.Contains(requirement.Scope))
             {
                 context.Succeed(requirement);
