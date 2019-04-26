@@ -105,6 +105,8 @@ fun Application.module(testing: Boolean = false) {
     }
 }
 
+
+// Denne må utvides til å sjekke på permissions
 fun validateJwt(credentials: JWTCredential) : Principal? {
 
     if (credentials.payload.issuer.equals("https://sonat.eu.auth0.com/"))

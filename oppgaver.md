@@ -54,5 +54,9 @@ endepunktene i APIet.
 Der finnes eksempel på hvordan dette gjøres for .net her:   
 https://auth0.com/docs/quickstart/backend/aspnet-core-webapi
 
+Eksempel kotlin:
+https://ktor.io/servers/features/authentication/jwt.html
+(Bruk JWK eksemplet)
+
 Se også gjerne på eksempel implementasjonene vi har laget på github:
 https://github.com/Sonat-Consulting/fagdag-openapi
