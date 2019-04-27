@@ -3,6 +3,7 @@
 Create and run an API from Python. 
 
 This is a simple implementation of FastAPI in Python to test out a few constructs:
+- Running an API on Python
 - OpenAPI documentation
 - Write and read from SQLite via SQLAlchemy
 - Authentication
@@ -68,7 +69,7 @@ Visit http://127.0.0.1:8000/docs in your browser to interact with the API.
 
 Authenticate by clicking "authentication" in upper right corner.
 
-
+User `admin`, password `admin_password`.
 
 ## Documentation
 
