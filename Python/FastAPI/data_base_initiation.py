@@ -4,7 +4,7 @@ from sqlalchemy import Column, Integer, String, ForeignKey, Boolean
 from sqlalchemy.orm import relationship
 
 # set up data base
-SQLALCHEMY_DATABASE_URI = "sqlite:///./FastAPI/sonat_employees.db"
+SQLALCHEMY_DATABASE_URI = "sqlite:///./Python/FastAPI/sonat_employees.db"
 engine = create_engine(SQLALCHEMY_DATABASE_URI, connect_args={"check_same_thread": False})
 Base = declarative_base()
 
@@ -41,7 +41,6 @@ df
 df.to_sql("employees", con=engine, if_exists="append", index=False)
 
 # delete tables
-Employee.__table__.drop(engine)
-Address.__table__.drop(engine)
+# Employee.__table__.drop(engine)
+# Address.__table__.drop(engine)
 
-# https://www.pythoncentral.io/introductory-tutorial-python-sqlalchemy/
